@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.page-action-container {
+    padding-left: 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: flex-end;
+    background-color: #218c74;
+}
+
+.page-action {
+    margin: 0.453rem;
+    color: #f1f2f6;
+
+}
+
+.window-action{
+    position: absolute;
+    right:0;
+    margin-right: 0.712rem;
+    cursor: pointer;
+    color:#ecf0f1;
+
+
+}
+
+.cell-prop-container {
+    height: 3rem;
+    background-color: #ecf0f1;
+}
+
+.cell-prop-container > * {
+    cursor: pointer;
+}
+
+.formula-action-container {
+    display: flex;
+    align-items: center;
+    background-color: #ecf0f1;
+    padding-left: 1rem;
+    height: 3rem;
+}
+
+.formula-action-container>* {
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.formula-action-container>input {
+    border: none;
+    height: 62%;
+    outline: none;
+}
+
+.formula-action-container>img {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.address-bar {
+    width: 5rem;
+    margin-right: 0.69rem;
+    text-align: center;
+}
+
+.formula-bar {
+    width: calc(100vw - 5rem - 1.2rem - 0.7rem - 0.7rem);
+}
+
+.sheet-container {
+    font-weight: bold;
+    padding: 0 0.3rem 0 0.3rem;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background-color: #ecf0f1;
+    gap: 1rem;
+}
+
+.sheet-container>* {
+    display: inline-block;
+}
+
+
+.cell-prop-container {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+
+}
+
+.cell-prop-container>* {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+
+.cell-prop-container>select {
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.font-family-prop {
+    padding: 0.2rem;
+}
+
+.font-size-prop {
+    padding: 0.2rem;
+}
+
+.sheet-folder-container {
+    display: flex;
+
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    height: 80%;
+    font-size: 0, 5rem;
+    width: calc(100vw - 2vw);
+
+}
+
+.sheet-add-icon {
+    width: 2vw;
+
+}
+
+.grid-container {
+    height: calc(100vh - 3rem - 3rem - 3rem - 3rem);
+    position: relative;
+    background-color: #ecf0f1;
+    overflow: scroll;
+}
+
+.top-left-dummy {
+    position: fixed;
+    z-index: 5;
+    height: 2rem;
+    width: 2rem;
+    background-color: #747d8c;
+}
+
+
+.cell-container {
+
+    position: absolute;
+    top: 0;
+    left: 2rem;
+
+
+}
+
+.address-col-container {
+
+    position: sticky;
+    top: 2rem;
+    left: 0;
+
+}
+
+.address-row-container {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 2rem;
+
+}
+
+.address-col {
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 1px solid #dfe4ea;
+}
+
+.address-row {
+    height: 2rem;
+    text-align: center;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    outline: none;
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+}
+.color-options{
+    position:relative;
+}
+
+.color-picker, 
+.bg-color-picker{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0; /** Make element transperent **/
+} 
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloneCell</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/google-sheets.png" alt="google-sheets" type="image/x-icon">
+</head>
+
+<body>
+    <div class="page-action-container">
+        <div class="page-action">Home</div>
+        <div class="page-action">File</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+        <div class="window-action">
+            <span class="material-icons" id = "close-window">
+                close
+                </span>
+        </div>
+    </div>
+  
+    <div class="cell-prop-container">
+        <span class="material-icons">
+            content_copy
+        </span>
+        <span class="material-icons">
+            content_cut
+        </span>
+        <span class="material-icons">
+            content_paste
+        </span>
+
+        <select class="font-family-prop">
+            <option value="monospace">Monospace</option>
+            <option value="sans-serif">Sans Serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="cursive">Cursive</option>
+        </select>
+
+        <select class="font-size-prop">
+            <option value="14" >14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+        </select>
+        <span class="material-icons bold">
+            format_bold
+        </span>
+
+        <span class="material-icons italic">
+            format_italic
+        </span>
+        <span class="material-icons underline">
+            format_underline
+        </span>
+        <span class="material-icons alignment">
+            format_align_left
+        </span>
+        <span class="material-icons alignment">
+            format_align_center
+        </span>
+        <span class="material-icons alignment ">
+            format_align_right
+        </span>
+
+        
+        <div class="color-options">
+        <span class="material-icons" class = "color-text">
+            format_color_text
+            </span>
+
+        <input type="color" class = "color-picker">
+        </div>
+        <div class="color-options">
+            <span class="material-icons" class="color-icon">
+                format_color_fill
+                </span>
+            <input type="color" class = "bg-color-picker">
+        </div>
+    </div>
+    <div class="formula-action-container">
+        <input type="text" class="address-bar" readonly>
+        <img src="https://img.icons8.com/ios/50/formula-fx.png" alt="formula-fx" class="formula-image"/>
+        <input type="text" class="formula-bar">
+    </div>
+    <div class="grid-container">
+        <div class="top-left-dummy"></div>
+        <div class="address-col-container"></div>
+        <div class="cell-container">
+            <div class="address-row-container"></div>
+        </div>
+    </div>
+    <div class="sheet-container">
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+            </span>
+        </div>
+
+        <div class="sheet-folder-container">
+            Sheet1
+        </div>
+    </div>
+
+</body>
+<script src="gridCreator.js"></script>
+<script src="cell-props.js"></script>
+</html>
